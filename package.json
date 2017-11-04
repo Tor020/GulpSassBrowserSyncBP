@@ -1,0 +1,15 @@
+{
+  "name": "sass-gulp-browsersyncbp",
+  "version": "1.0.0",
+  "description": "Boilerplate for using sass with regular front end technologies",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Coyle",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
