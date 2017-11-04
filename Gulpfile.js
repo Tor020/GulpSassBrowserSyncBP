@@ -6,7 +6,7 @@ var reload = browserSync.reload;
 var src = {
     sass: 'index/sass/*.scss',
     css: 'index/css',
-    html: 'index/*.html'
+    html: '*.html'
 };
 
 // Static Server + watching scss/html files
@@ -22,7 +22,7 @@ gulp.task('serve', ['sass'], function() {
 // Compile sass into CSS
 gulp.task('sass', function() {
     return gulp
-        .src(src.scss)
+        .src(src.sass)
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest(src.css))
         .pipe(reload({ stream: true }));
